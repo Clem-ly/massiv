@@ -52,7 +52,7 @@ class StatsServiceTest {
     public void testMonthsAboveAverage() {
         StatsService statsService = new StatsService();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
-        long actual = statsService.calculateMonthsBellowAverage(sales);
+        long actual = statsService.calculateMonthsAboveAverage(sales);
         long expected = 5;
     }
 }
